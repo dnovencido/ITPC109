@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positioning</title>
+        <style>
+            body {
+                max-width: 1200px;
+                width: 100%;
+                margin: auto;
+            }
+
+            #container > div.box {
+                width: 120px;
+                height: 120px;
+                border: 1px solid;
+                padding: 10px;
+            }
+
+            #item-2 {
+                position: absolute;
+                top: 420px;
+            }
+
+            #item-3 {
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Positioning </h1>
+        <div id="container">
+            <div id="item-1" class="box">1</div>
+            <div id="item-2" class="box">2</div>
+            <div id="item-3" class="box">3</div>
+        </div>
+    </body>
+</html>
