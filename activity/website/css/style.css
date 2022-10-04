@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+} 
+
+header {
+    background-color: #faebd7;
+    padding: 20px;
+}
+
+nav {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+ul#menu > li {
+    display: inline-block;
+    padding: 15px;
+    list-style: none;
+}
+
+ul#menu a {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+#banner-description h1 {
+    font-size: 2.8rem;
+}
+
+#banner-description p {
+    font-size: 1.5rem;
+}
+
+#banner-image img {
+    transition: transform .5s ease-in-out;
+    animation: fadeInAnimation ease 3s;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#banner-image img:hover {
+    transform: scale(1.1);
+}
+
+#banner > div {
+    flex: 1 1 100px;
+}
+
+#banner-description h1 {
+    margin-bottom: 5px;
+}
+
+#about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#about {
+    margin: 80px 0 80px 0;
+}
+
+#about-content > div {
+    flex: 1 1 250px;
+}
+
+#about-content img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#about-description h1 {
+    font-size: 0.8 rem;
+    color: #c1171a;
+}
+
+#about-description h2 {
+    font-size: 1.8rem;
+}
+
+#about-description p {
+    font-size: 1.5rem;
+}
+
+#services {
+    margin: 50px 0 50px 0;
+    padding: 20px;
+    background-color: #FFEBEE;
+}
+
+#services-description {
+    text-align: center;
+}
+
+#services-description h2 {
+    color: #c1171a;
+    font-size: 0.8 rem;
+}
+
+#services-description h1 {
+    font-size: 1.8rem;
+}
+
+#services-list-content {
+    display: flex;
+    gap: 75px;
+}
+
+#services-list-content > div.service-item {
+    flex: 1 1 200px;
+    padding: 20px;
+}
+
+#services-list-content img {
+    width: 120px;
+    margin: auto;
+    display: block;
+}
+
+#services-list-content div.service-item-description {
+    text-align: center;
+}
+
+#logo {
+    width:280px;
+}
+
+.btn {
+    background-color: #c1171a; /* Green */
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-rounded {
+    border-radius: 25px;
+}
+
+.btn-md {
+    padding: 15px 32px;
+    font-size: 1rem;
+}
+
+.btn-xs {
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+#popular-dish {
+    margin: 50px 0 50px 0;
+    padding: 20px;
+}
+
+#popular-dish-description {
+    text-align: center;
+}
+
+#popular-dish-description h2 {
+    color: #c1171a;
+    font-size: 0.8 rem;
+}
+
+#popular-dish-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px;
+    gap: 45px 15px;
+}
+
+#popular-dish-container > div.popular-dish-item {
+    padding: 15px;
+}
+
+#popular-dish-container div.popular-dish-item-image {
+    height: 250px;
+}
+
+#popular-dish-container div.popular-dish-item-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#popular-dish-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#popular-dish-container div.popular-dish-item-rating {
+    color: #9E9E9E;
+}
+
+#popular-dish-container div.popular-dish-item-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#popular-dish-container div.popular-dish-item-price {
+    font-size: 1.2rem;
+}
+
+footer {
+    background: rgb(0, 0, 0);
+    color: #FFFFFF;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+footer {
+    height: 150px;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
