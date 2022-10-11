@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #ECEFF1;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+ol#task-list > li {
+    border: 1px solid #BFBFBF;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+ol#task-list button {
+    float: right;
+}
+
+ol#task-list .status {
+    margin-right: 10px;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+input#task {
+    padding: 13px 20px 13px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+.btn-delete {
+    margin: 5px 5px 5px 10px;
+    height: 100%;
+}
+
+.btn {
+    background-color: #c1171a; /* Green */
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.btn-lg {
+    padding: 15px;
+    font-size: 1rem;
+    width: 130px;
+}
+
+.btn-xs {
+    padding: 5px;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
