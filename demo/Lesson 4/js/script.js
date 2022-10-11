@@ -65,7 +65,6 @@ function deleteTask() {
     for (var i=0; i< btnDelete.length; i++) {
         btnDelete[i].addEventListener("click", function(){
             var id = this.getAttribute("data-id");
-            console.log(id);
             var parentDiv = document.getElementById("task-list");
             var removeList = document.getElementById("list-task-item-" + id);
             parentDiv.removeChild(removeList);    
