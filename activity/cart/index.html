@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart</title>
+
+        <style>
+            body {
+                max-width: 700px;
+                width: 100%;
+                margin: auto;
+                background-color: aliceblue;
+                font-size: 16px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            table#my-cart {
+                width: 100%;
+                background-color: #FFFFFF;
+                padding: 10px;
+            }
+
+            .product-item-details {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            table#my-cart .product-image {
+                width: 95px;
+                height: 95px;
+                margin: auto;
+            }
+
+            table#my-cart .col-title {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                color: #90A4AE;
+                text-align: center;
+                padding: 20px;
+            }
+
+            table#my-cart .row-value {
+                font-size: 1.1rem;
+                text-align: center;
+                padding: 25px;
+            }
+
+            table#my-cart img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+
+            .btn {
+                background-color: #c1171a; /* Green */
+                border: none;
+                color: white;
+                padding: 10px;
+                margin: auto;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>My Cart</h1>
+                <table id="my-cart">
+                    <thead>
+                        <tr>
+                            <td class="col-title">Product Details</td>
+                            <td class="col-title">Quantity</td>
+                            <td class="col-title">Price</td>
+                            <td class="col-title">Total</td>
+                            <td class="col-title"> Action </td>
+                        </tr>
+                    </thead>
+                    <tbody id="my-cart-item">
+                        <tr id="product-item-1">
+                            <td class="product-item-details">
+                                <div class="product-image">
+                                    <img src="img/product-1.jpg" alt="">
+                                </div>
+                                <div class="product-description">
+                                    Stretch travel T-shirt
+                                </div>
+                            </td>
+                            <td class="row-value">
+                                5
+                            </td>
+                            <td class="row-value">
+                                $1.50
+                            </td>
+                            <td class="row-value">
+                                $7.50
+                            </td>
+                            <td class="row-value">
+                                <p>
+                                    <button class="btn btn-remove" role="button" data-id="1">Remove</button>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="product-item-2">
+                            <td class="product-item-details">
+                                <div class="product-image">
+                                    <img src="img/product-2.jpg" alt="">
+                                </div>
+                                <div class="product-description">
+                                    Sony PlayStation 5
+                                </div>
+                            </td>
+                            <td class="row-value">
+                                1
+                            </td>
+                            <td class="row-value">
+                                $200.00
+                            </td>
+                            <td class="row-value">
+                                $200.00
+                            </td>
+                            <td class="row-value">
+                                <p>
+                                    <button class="btn btn-remove" role="button" data-id="2">Remove</button>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="product-item-3">
+                            <td class="product-item-details">
+                                <div class="product-image">
+                                    <img src="img/product-3.jpg" alt="">
+                                </div>
+                                <div class="product-description">
+                                    Adidas Superstar
+                                </div>
+                            </td>
+                            <td class="row-value">
+                                2
+                            </td>
+                            <td class="row-value">
+                                $80.50
+                            </td>
+                            <td class="row-value">
+                                $161.00
+                            </td>
+                            <td class="row-value">
+                                <p>
+                                    <button class="btn btn-remove" role="button" data-id="3">Remove</button>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
