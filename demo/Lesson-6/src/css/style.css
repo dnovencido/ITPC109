@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+} 
+
+header {
+    padding: 20px;
+}
+
+nav {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+ul#menu > li {
+    display: inline-block;
+    padding: 15px;
+    list-style: none;
+}
+
+ul#menu a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+#logo {
+    width: 130px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+#banner-description h1 {
+    font-size: 2.8rem;
+}
+
+#banner-description p {
+    font-size: 1.2rem;
+}
+
+#banner-image img {
+    transition: transform .5s ease-in-out;
+    animation: fadeInAnimation ease 3s;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#banner-image img:hover {
+    transform: scale(1.1);
+}
+
+#banner > div {
+    flex: 1 1 100px;
+}
+
+#banner-description h1 {
+    margin-bottom: 5px;
+}
+
+#register-container {
+    width: 100%;
+}
+
+#register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register > div#register-form {
+    padding: 10px;
+    flex: 0 0 500px;
+}
+
+.input-control {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 1px solid #CDD9ED;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #275EFE;
+}
+
+.alert {
+    border: 1px solid;
+}
+
+.alert-danger {
+    background: #FFEBEE;
+    border: 1px solid #F44336;
+}
+
+.alert-danger ul > li {
+    font-size: 0.8 rem;
+}
+
+.btn {
+    background: #FF0033; /* Green */
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    display:inline-block;
+    text-align: center;
+}
+
+.btn-rounded {
+    border-radius: 25px;
+}
+
+.btn-lg {
+    padding: 15px 32px;
+    font-size: 1rem;
+}
+
+.btn-md {
+    padding: 10px;
+    font-size: 0.8rem;
+    width: 100px;
+}
+
+.btn-sm {
+    padding: 8px;
+    font-size: 0.7rem;
+    width: 50px;
+
+}
+
+#my-blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#my-blogs div.my-blogs-item {
+    flex: 0 1 270px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#my-blogs div.blog-title {
+    border-bottom: 1px solid #bfbfbf;
+}
+
+#blog-view {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+#blog-view .blog-view-item {
+    padding: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#blog-view .blog-view-item p.information {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+#blog-view .blog-view-item #view-blog p {
+    font-size: 1.2rem;
+    line-height: 3ch;
+}
+#blog-view div.blog-view-item div.alert-danger {
+    padding: 10px;
+}

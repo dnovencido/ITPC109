@@ -1,0 +1,28 @@
+version: '3.9'
+
+services: 
+  php-env: 
+    build: 
+      dockerfile: ./DockerFile
+    container_name: 'php_demo'
+    volumes: 
+      - ./src:/var/www/html
+    ports:
+      - 9003:80
+  mysql_db:
+    image: mysql:latest
+    container_name: 'mysql_demo'
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: 'phpmyadmin_demo'
+    restart: always
+    environment:
+      PMA_HOST: mysql_db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - 9004:80
